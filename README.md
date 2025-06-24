@@ -1,35 +1,54 @@
-# 🔐 Incident Simulations – SOC Analyst Simulation
+# 🧩 Incident Simulations – SOC Analyst Simulation
 
-This is a work-in-progress cybersecurity project that simulates a real SOC (Security Operations Center) alert pipeline with realistic, multi-stage attack scenarios.
+This is my full-stack cybersecurity simulation project that replicates a real-world Security Operations Center (SOC) environment. It includes realistic multi-stage attack scenarios, AI-generated alerts, threat intelligence integration, and a complete front-end interface.
 
-## 🚧 Current Goals
+---
 
-- Redesigning UI and alert workflow from scratch
-- Rebuilding Gemini-based alert and metadata generator
-- Setting up clean alert storage (Firestore or local JSON)
-- Simplifying architecture for stability and expandability
+## 🚨 Key Features
 
-## 💡 Features (Planned)
+- **Multi-phase attack simulation** (Recon → Access → Lateral Movement → Exfiltration)
+- **Gemini AI-powered alert & metadata generation**
+- **Live alert feed with adjustable speed**
+- **Log search interface** with correlated log output
+- **Threat Intelligence Center** for IP lookups
+- **Analyst profile & achievement system**
+- **Progress save/load system**
 
-- Multi-step alert generation: Recon → Access → Movement → Exfil
-- AI-generated metadata (email bodies, console logs, filenames, etc.)
-- “More Details” view for each alert
-- Alert filtering (severity, category, resolved)
-- Real-world style analyst workflow
+---
 
-## 🧠 Tech Stack
+## 🛠️ Tech Stack
 
-- Vanilla JS, HTML, CSS (no framework)
-- Gemini AI for content generation
-- Firebase for alert storage
-- GitHub for project management
+- HTML, CSS, JavaScript (Vanilla)
+- Gemini AI (via prompt template)
+- Firebase (for data storage, optional)
+- JSON (for local alert/metadata caching)
 
-## 🖼️ UI Preview (WIP)
+---
 
-![Dashboard Preview](./screenshots/dashboard-preview.png)
+## 📸 UI Screenshots
 
-## 🔄 Status
+Explore how the simulation looks in action:
 
-- 🟨 Planning & restructure
-- ⏳ UI rebuild
-- 🔜 Gemini prompt tuning
+| Section | Screenshot |
+|--------|------------|
+| **Dashboard Overview** | ![Dashboard](./screenshots/Screenshot%202025-06-24%20at%2015-44-28%20SOC%20Simulator%20-%20Final.png) |
+| **Alert Feed** | ![Alerts](./screenshots/Screenshot%202025-06-24%20at%2015-44-36%20SOC%20Simulator%20-%20Final.png) |
+| **Log Search** | ![Log Search](./screenshots/Screenshot%202025-06-24%20at%2015-44-54%20SOC%20Simulator%20-%20Final.png) |
+| **Threat Intel** | ![Threat Intel](./screenshots/Screenshot%202025-06-24%20at%2015-45-00%20SOC%20Simulator%20-%20Final.png) |
+| **Analyst Profile** | ![Profile](./screenshots/Screenshot%202025-06-24%20at%2015-45-06%20SOC%20Simulator%20-%20Final.png) |
+| **Settings Panel** | ![Settings](./screenshots/Screenshot%202025-06-24%20at%2015-45-13%20SOC%20Simulator%20-%20Final.png) |
+
+See [`/screenshots/README.md`](./screenshots/README.md) for more details on each view.
+
+---
+
+## 📌 Status
+
+- ✅ UI Completed
+- ✅ Alert engine functional
+- ✅ Metadata integration complete
+- 🔜 Future goal: add dynamic log ingest & detection scoring
+
+---
+
+> This project demonstrates not only my cybersecurity knowledge, but also my ability to design realistic tools for training, detection, and incident response.
