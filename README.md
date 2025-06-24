@@ -7,7 +7,7 @@ This is my full-stack cybersecurity simulation project that replicates a real-wo
 ## 🚨 Key Features
 
 - **Multi-phase attack simulation** (Recon → Access → Lateral Movement → Exfiltration)
-- **Gemini AI-powered alert & metadata generation**
+- **Gemini AI-powered Evaluation**
 - **Live alert feed with adjustable speed**
 - **Log search interface** with correlated log output
 - **Threat Intelligence Center** for IP lookups
