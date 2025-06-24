@@ -1,44 +1,35 @@
-# 🧩 Incident Simulations – SOC Analyst Dashboard Project
+# 🔐 Incident Simulations – SOC Analyst Simulation
 
-This is my capstone cybersecurity simulation project, where I replicate real-world incident workflows in a simulated Security Operations Center (SOC) dashboard.
+This is a work-in-progress cybersecurity project that simulates a real SOC (Security Operations Center) alert pipeline with realistic, multi-stage attack scenarios.
 
-## 🎯 Goal
+## 🚧 Current Goals
 
-Build and simulate realistic attack scenarios and generate alerts for training, analysis, and automation. The app mimics real SOC platforms like Splunk or Microsoft Sentinel.
+- Redesigning UI and alert workflow from scratch
+- Rebuilding Gemini-based alert and metadata generator
+- Setting up clean alert storage (Firestore or local JSON)
+- Simplifying architecture for stability and expandability
 
-## 🛠️ Features
+## 💡 Features (Planned)
 
-- Gemini AI-powered alert generation
-- Multi-step attack scenarios (Recon → Access → Lateral Movement → Exfil)
-- Custom UI for reviewing alerts
-- Firestore integration to store alerts and metadata
-- Alert severity, category, source IP, and timestamps
-- "More Details" view pulls AI-generated extra metadata
+- Multi-step alert generation: Recon → Access → Movement → Exfil
+- AI-generated metadata (email bodies, console logs, filenames, etc.)
+- “More Details” view for each alert
+- Alert filtering (severity, category, resolved)
+- Real-world style analyst workflow
 
-## 📁 Structure
+## 🧠 Tech Stack
 
-- `scenarios/` – Markdown breakdowns of each attack path
-- `alerts/` – AI-generated alert data (JSON)
-- `metadata/` – Extra AI-generated context per alert
-- `firestore/` – Database schema and test cases
-- `tools/` – Scripts used to simulate attacks or generate logs
-- `api/` – Gemini prompt design and prompt structure
-- `screenshots/` – Visual demos of the SOC UI or app
+- Vanilla JS, HTML, CSS (no framework)
+- Gemini AI for content generation
+- Firebase for alert storage
+- GitHub for project management
 
-## 🔧 Technologies
+## 🖼️ UI Preview (WIP)
 
-- HTML, CSS, JavaScript (Frontend)
-- Gemini AI (Alert + Metadata)
-- Firebase (Firestore DB)
-- GitHub Pages (Optional Deployment)
+![Dashboard Preview](./screenshots/dashboard-preview.png)
 
-## 📸 Demo
+## 🔄 Status
 
-![SOC Preview](./screenshots/soc-dashboard-sample.png)
-
-## 📌 Status
-
-- 🔄 Core alert generation working
-- ✅ Metadata integration done
-- ⏳ UI final polish in progress
-
+- 🟨 Planning & restructure
+- ⏳ UI rebuild
+- 🔜 Gemini prompt tuning
